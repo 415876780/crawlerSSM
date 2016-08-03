@@ -81,7 +81,7 @@ public class TextController {
 		return "text/add";
 	}
 	@RequestMapping(value="/add",method=RequestMethod.POST)
-	public String login(String title,String select,Model model){
+	public String add(String title,String select,Model model){
 		fetch.setT(title);
 		fetch.setSelect(select);
 		new Thread(fetch).start();
