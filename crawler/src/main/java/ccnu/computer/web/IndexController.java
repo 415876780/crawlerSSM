@@ -39,7 +39,7 @@ public class IndexController {
 		Log.info(username+password);
 		User u = userService.login(username, password);
 		model.addAttribute("loginUser",u);
-		return "redirect:/text/allnews";
+		return "redirect:/text/texts";
 	}
 	@RequestMapping("/logout")
 	public String logout(Model model,HttpSession session){
